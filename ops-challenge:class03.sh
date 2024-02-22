@@ -6,18 +6,21 @@
 # Purpose:                      Write a function that prints the login history of users on this computer, followed by the text "This is the login istory". In your script, call that function three times.
 
 # Declaration of variables
-greeting="ethanpham  ttys000                   Wed Feb 21 17:32   still logged in
-ethanpham  ttys000                   Wed Feb 21 17:30 - 17:30  (00:00)
-ethanpham  ttys000                   Wed Feb 21 14:57 - 14:57  (00:00)
-ethanpham  ttys000                   Tue Feb 20 15:02 - 15:02  (00:00)"
+echo "$login_history"
+login_history=$(last)
+
 # Declaration of functions
-print_message() {
-echo $greeting
+print_message () {
+    echo "$login_history" 
 }
 
+print_message
+print_message
+print_message
+#Call the function
+print_message
 
 # Main
-echo $greeting
 
 
 
