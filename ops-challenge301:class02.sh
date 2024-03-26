@@ -16,8 +16,20 @@ second=`date +%S`
 
 
 # Declaration of functions
-echo "Current Date: $day.$month.$year"
-echo "Current Time: $hour:$minute:$second"
+if [ -f "/var/log/syslog" ]; then
+    # Copy /var/log/syslog to the current working directory
+    cp /var/log/syslog .
+    echo "Copied /var/log/syslog to the current working directory."
+else
+    echo "Error: /var/log/syslog not found."
+fi
+
+
+echo "Current Date: $day.$month.$year" >> testfile.txt
+echo "Current Time: $hour:$minute:$second" >> testfile.txt
+
+echo "Original file before append:"
+cat testfile.txt
 
 
 # Main
