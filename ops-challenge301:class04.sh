@@ -26,7 +26,6 @@ elif [ "$choice" = "IP info" ]; then
 elif [ "$choice" = "Exit" ]; then
     exit 
 
-# Main
 main() {
     while true; do 
         display_menu
@@ -34,5 +33,8 @@ main() {
         echo ""
     done
 }
+
+# Main
+
 
 # End
