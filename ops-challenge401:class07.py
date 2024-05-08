@@ -1,3 +1,10 @@
+#!/bin/usr/python3
+
+# Script Name:                      401 ops challenge 07
+# Author:                           Ethan Pham
+# Date of latest revision:          May 7, 2024
+# Purpose:                          Add folder encryption and decryption to the script
+
 import os
 import shutil
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
