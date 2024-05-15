@@ -5,7 +5,7 @@
 # Date of latest revision:          May 13, 2024
 # Purpose:                          Create a TCP Port Range Scanner that tests whether a TCP port is open or closed
 
-from scapy.all import
+import scapy.all as scapy
 
 def port_scan(host, port_range):
     for port in port_range:
@@ -19,6 +19,6 @@ def port_scan(host, port_range):
                     print(f"Port is closed")
 
 if __name__ == "__main__":
-    host = "8.8.8.8"
+    host = "192.168.0.1"
     port_range = range(1, 100)
     port_scan(host, port_range)
