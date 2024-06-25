@@ -2,7 +2,7 @@
 
 # Script Name:                      401 ops challenge 42
 # Author:                           Ethan Pham
-# Date of latest revision:          Jun 18, 2024
+# Date of latest revision:          Jun 25, 2024
 # Purpose:                          Copy the demo script and complete the objectives. 
 
 import nmap
