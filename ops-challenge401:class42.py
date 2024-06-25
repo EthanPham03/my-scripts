@@ -5,8 +5,6 @@
 # Date of latest revision:          Jun 18, 2024
 # Purpose:                          Copy the demo script and complete the objectives. 
 
-import subprocess
-import sys
 import nmap
 
 scanner = nmap.PortScanner()
